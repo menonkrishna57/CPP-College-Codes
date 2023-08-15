@@ -2,5 +2,18 @@
 using namespace std;
 int main()
 {
-    cout<<"Age: 17\n"<<"Name: Krishna Menon\n"<<"Gender: Male\n"<<"City: Mumbai\n"<<"Height: Dont know\n";
+    char name[100],city[100],gen;
+    int age;
+    float height;
+    cout<<"Enter name of the person: ";
+    cin.getline(name,100);
+    cout<<"Enter Age: ";
+    cin>>age;
+    cout<<"Enter Gender(M/F): ";
+    cin>>gen;
+    cout<<"Enter City: ";
+    cin.getline(city,100);
+    cout<<"Enter Height: ";
+    cin>>height;
+    return 0;
 }
