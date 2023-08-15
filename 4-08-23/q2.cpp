@@ -4,7 +4,7 @@ int main()
 {
     char name[100];
     int age;
-    cout<<"Enter name of the person: ";
+    cout<<"Enter name: ";
     cin.getline(name,100);
     cout<<"Enter Age: ";
     cin>>age;
