@@ -8,10 +8,10 @@ int main()
     cin>>x;
     cout<<"Enter Exponent: ";
     cin>>y;
-    // for(int i=1;i<=y;i++)
-    // {
-    //     result*=x;
-    // }
-    // cout<<x<<"^"<<y<<"="<<result;
-    cout<<x<<"^"<<y<<"="<<pow(x,y);
+    /* for(int i=1;i<=y;i++) //*This is the long way of doing it
+     {
+         result*=x;
+     }
+     cout<<x<<"^"<<y<<"="<<result;*/
+    cout<<x<<"^"<<y<<"="<<pow(x,y);//*This is the short way of doing it
 }
