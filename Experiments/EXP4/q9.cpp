@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    int palin = 0, n = 0, m = 0, c = 0; //*Initializing all variables
+    int palin = 0, n , m ; //*Initializing all variables
     cout << "Enter Number: ";
     cin >> n;
     m = n; //*Making another copy of n so that the original value stays safe after all the operations i do on it in the do while loop

@@ -9,7 +9,7 @@
 using namespace std; //*for cout and cin
 int main()
 {
-    int armstong = 0, n = 0, m = 0, c = 0; //*initializing variables
+    int armstong = 0, n , m , c = 0; //*initializing variables
     cout << "Enter Number: ";              //*taking input
     cin >> n;
     m = n; //*making another copy of n so that the original value stays safe after all the operations i do on it in the do while loop
@@ -30,6 +30,6 @@ int main()
     }
     else
     {
-        cout << armstong << "Not an armstrong number"; //*If the sum of the powers of the digits is not equal to the original number then it is not an armstrong number
+        cout << n << " is not an armstrong number"; //*If the sum of the powers of the digits is not equal to the original number then it is not an armstrong number
     }
 }
