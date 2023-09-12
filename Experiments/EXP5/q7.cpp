@@ -8,21 +8,29 @@ int main()
     cin>>n1;
     cout<<"Enter N2:";
     cin>>n2;
-    for(int i=n1+1;i<n2;i++)
+    if (n1>=n2)
     {
-        check=true;
-        for(int j=2;j<i;j++)
+        cout<<"N1 should be less than N2"<<endl;
+        return 0;
+    }
+    else
+    {
+        for(int i=n1+1;i<n2;i++)
         {
-            if(i%j==0)
+            check=true;
+            for(int j=2;j<i;j++)
             {
-                check=false;
-                break;
+                if(i%j==0)
+                {
+                    check=false;
+                    break;
+                }
+                
             }
-            
+            if(check)
+                {
+                    cout<<"Prime Number: "<<i<<endl;
+                }
         }
-        if(check)
-            {
-                cout<<"Prime Number: "<<i<<endl;
-            }
     }
 }
