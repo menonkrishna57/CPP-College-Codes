@@ -9,7 +9,7 @@ int main()
         {
             for(int k=1;k<=3;k++)
             {
-                cout<<i<<j<<k<<endl;
+                cout<<i<<j<<k<<" ";
             }
         }
     }
