@@ -16,6 +16,12 @@ int main()
     {
         copied[i]=arr[i];
     }
+    cout<<"Orignal Array:"<<endl;
+    for(int i=0;i<c;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\nCopied Array:"<<endl;
     for(int i=0;i<c;i++)
     {
         cout<<copied[i]<<" ";
