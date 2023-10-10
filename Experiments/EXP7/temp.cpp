@@ -1,42 +1,33 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
+int main()
+{
+    int i,mycounter=0,num1,num2,sum=0,copy_init,mydigit,counter_init,myinit;
+    cin>>num1>>num2;
+    cout<<"the armstrong numbers are ";
+    for (i=num1+1;i<num2;i++)
+    {
+        sum=0;mycounter=0;
+        myinit=i;copy_init=i;counter_init=i;
+        while (counter_init!=0)
+        {
+            mycounter++;
+            counter_init=counter_init/10;
+            
+        }
+        do
+        {
+            mydigit=copy_init%10;
+            sum+=pow(mydigit,mycounter);
+            copy_init=copy_init/10;
+            
+        }while (copy_init!=0);
 
-// Function to calculate the nth Fibonacci number using recursion
-int fibonacci(int n) {
-    if (n <= 1) {
-        return n;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+        if (sum==myinit){
+            cout<<sum;
+        }
 }
-
-
-
-// Function to print the Fibonacci series up to n
-void printFibonacciSeries(int n) {
-    for (int i = 0; i < n; ++i) {
-        cout << fibonacci(i) << " ";
-    }
-    cout << endl;
-}
-
-
-
-int main() {
-    int n;
-    cout << "Enter the number of Fibonacci numbers to print: ";
-    cin >> n;
-
-
-
-    if (n <= 0) {
-        cout << "Invalid input. Please enter a positive number." << endl;
-    } else {
-        cout << "Fibonacci series up to " << n << " numbers: ";
-        printFibonacciSeries(n);
-    }
-
-
-
     return 0;
 }
