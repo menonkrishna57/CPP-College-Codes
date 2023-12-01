@@ -7,7 +7,7 @@ int main()
     cout<<"The values are: ";
     for(int i=0;i<5;i++)
     {
-        cout<<*p;
+        cout<<&a[i]<<endl;
         *p++;
     }
     return 0;
