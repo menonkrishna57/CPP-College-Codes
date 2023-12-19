@@ -1,35 +1,20 @@
 #include <iostream>
-#include <string>
+#include<cstring>
+using namespace std;
 
-class CricketPlayer {
-private:
-    int playerNumber;
-    string name;
-    double battingAverage;
-
-public:
-    void input() {
-        cout << "Enter player number: ";
-        cin >> playerNumber;
-        cout << "Enter name: ";
-        cin.ignore();
-        getline(cin, name);
-        cout << "Enter batting average: ";
-        cin >> battingAverage;
-    }
-
-    void display() {
-        cout << "Player Number: " << playerNumber << endl;
-        cout << "Name: " << name << endl;
-        cout << "Batting Average: " << battingAverage << endl;
-    }
-};
-
-int main() {
-    CricketPlayer player;
-    player.input();
-    player.display();
-
-    return 0;
+int main(){
+char s[10],cpy[10];
+cin>>s;
+int a=0;
+for (int i=0;s[i];i++)
+{
+ s[i];   
+    a++;
 }
+for (int i=a;i>=0;i--)
+{
+    cpy[a-i]=s[i];
+}
+cout<<cpy;
 
+}
